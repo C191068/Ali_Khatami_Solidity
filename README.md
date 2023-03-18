@@ -64,4 +64,11 @@ contract akrkSimplestorage {
 
 //0xd9145CCE52D386f254917e481eB44e9943F39138
 ```
+After compiling when we will deploy our contract we will see the following informations about deployment shown in the picture below:<br> 
+![a1](https://user-images.githubusercontent.com/89090776/226108818-dee71417-6447-42f2-8422-1effb3eb52c6.jpg)
+![a2](https://user-images.githubusercontent.com/89090776/226108832-42467b80-5d92-428c-a466-79ab7ac5e52a.jpg)
+![a3](https://user-images.githubusercontent.com/89090776/226108837-d53a872d-3476-4d7c-b51a-cf5d8e3f7f87.jpg)<br>
+
+When we deploy a contract it is actually the same as sending a transaction. We have to remember when we do anything on blockchain,we modify any value we are actually sending transaction.<br>
+Deploying a contract is modifying the blockchain to have this contract,it is modifying the state of blockchain.
 
