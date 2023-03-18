@@ -6,6 +6,10 @@ Solidity is constantly changing and updating language.<br>
 Today I have have done some basic part of solidity
 ```
 //SPDX-License-Identifier: MIT
+//"SPDX" stands for "Software Package Data Exchange", which is a standard for sharing information about software licenses. 
+//It provides a common way for developers, lawyers, and other stakeholders to identify and understand the terms of a software license
+//"License-Identifier" is a keyword that identifies the license that applies to the code. It is used to uniquely identify the license terms and make them easily accessible
+//"MIT" is the name of the license that applies to the code. The MIT License is a permissive open-source license that allows anyone to use, modify, and distribute the code, as long as they include a copy of the license in their distribution.
 //at the top of our code we use licensing to make our code sharing and licensing easier and MIT which is the least restrictive license
 pragma solidity ^0.8.7;
 //we have to tell our code which version of solidity we need to use 
