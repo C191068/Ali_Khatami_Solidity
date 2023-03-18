@@ -66,17 +66,32 @@ contract akrkSimplestorage {
 ```
 After compiling when we will deploy our contract we will see the following informations about deployment shown in the picture below:<br> 
 ![a1](https://user-images.githubusercontent.com/89090776/226108818-dee71417-6447-42f2-8422-1effb3eb52c6.jpg)
+Figure 1
 ![a2](https://user-images.githubusercontent.com/89090776/226108832-42467b80-5d92-428c-a466-79ab7ac5e52a.jpg)
-![a3](https://user-images.githubusercontent.com/89090776/226108837-d53a872d-3476-4d7c-b51a-cf5d8e3f7f87.jpg)<br>
+Figure 2
+![a3](https://user-images.githubusercontent.com/89090776/226108837-d53a872d-3476-4d7c-b51a-cf5d8e3f7f87.jpg)
+Figure 3
+<br>
 
 When we deploy a contract it is actually the same as sending a transaction. We have to remember when we do anything on blockchain,we modify any value we are actually sending transaction.<br>
 Deploying a contract is modifying the blockchain to have this contract,it is modifying the state of blockchain.
 
 When we run the above code we will see the following image at deploy and transaction tab:
-![an3](https://user-images.githubusercontent.com/89090776/226110523-12ca43ff-f9e5-4f20-a990-9c9c28fb57a2.jpg)<br>
+![an4](https://user-images.githubusercontent.com/89090776/226111390-a0c05fdb-68e9-46a2-8eae-c320b3479074.jpg)
+Figure 4
+<br>
+
 Here,<br>
 In the above image the orange color store button appers due to the store function and the blue color prefferednumber button appears because we have made the visibility of preferred number to public.
-When we typed a number and hit the the store button we are actually making a transaction and
+When we typed a number ```632``` and hit the the store button we are actually making a transaction and then we hit the preferrednumber button we see that preferrednumber gets stored as ```632```<br>
+For better understanding of solidity function vissibility we need to visit this website https://docs.soliditylang.org/en/v0.8.19/cheatsheet.html <br>
+Here ```public``` before ```uint256 public preferredNumber```   means anyone who interacts with this contract can see what is store in the prefereednumber.<br>
+By default every keyword here is default.<br>
+In figure 1 we can see that transaction cost occurs in amount of gas , the more complex we do in our code the more is the transaction cost.<br>
+
+
+
+
 
 
 
