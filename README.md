@@ -1,4 +1,6 @@
 ## Ali_Khatami_Solidity
+### Basic with data types
+We are using ```https://remix.ethereum.org/``` for our solidity smart contracts<br> 
 We have created a file ```akrkSimpleStorage.sol``` where ```.sol``` means that it is a solidity file. Solidity is the priamary coding language of smart contract.<br>
 Solidity is constantly changing and updating language.<br>
 Today I have have done some basic part of solidity
@@ -26,3 +28,40 @@ contract akrkSimplestorage {
   address akraddress= 0x3Fe3d73B20BAc5A43D8dACb674982011ec1Db200;
 }
 ```
+<br><br>
+
+### Basic Function
+Function and method executes a subset of code when called<br>
+There is a deploy and run transaction tab at remix that contain a ton of configuration pieces to deploy our contract<br>
+Here our environment is a fake local blockchain environment where we can simulate transaction really quickly without having to wait for them to go through on a testnet<br>
+When we run our fake local blockchain environment we are given a whole bunch of fake accounts from where to deploy from and we are given 100 ether<br>
+Smart contracts have addresses like our wallet accounts<br>
+
+Example of basic function
+```
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+contract akrkSimplestorage {
+  // basic data types: boolean, uint,int,address,bytes
+  //uint(unsigned integer only positive),int both pos and neg
+  //address is the address of the account
+  //string are secretly byte objects only for text
+  //bytes32 is a bytes objects whre 32 represent how many bytes we want them to be,max size is 32
+  //byte objects look like 0xsdsysydggt
+  //unint256 here 256 is bit (8,16,32 upto 256 we can use)
+  uint256 public preferredNumber;//this gets initialized to zero
+
+//pasing parameter of type uint256 and made the function public
+  function store(uint256 _preferredNumber) public{
+    preferredNumber = _preferredNumber;
+    preferredNumber = preferredNumber +1;
+
+
+  }
+  
+}
+
+//0xd9145CCE52D386f254917e481eB44e9943F39138
+```
+
