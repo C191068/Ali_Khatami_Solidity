@@ -72,3 +72,11 @@ After compiling when we will deploy our contract we will see the following infor
 When we deploy a contract it is actually the same as sending a transaction. We have to remember when we do anything on blockchain,we modify any value we are actually sending transaction.<br>
 Deploying a contract is modifying the blockchain to have this contract,it is modifying the state of blockchain.
 
+When we run the above code we will see the following image at deploy and transaction tab:
+![an3](https://user-images.githubusercontent.com/89090776/226110523-12ca43ff-f9e5-4f20-a990-9c9c28fb57a2.jpg)<br>
+Here,<br>
+In the above image the orange color store button appers due to the store function and the blue color prefferednumber button appears because we have made the visibility of preferred number to public.
+When we typed a number and hit the the store button we are actually making a transaction and
+
+
+
