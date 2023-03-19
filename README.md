@@ -64,6 +64,9 @@ contract akrkSimplestorage {
 
 
   }
+  function retrieve() public view returns(uint256){
+    return preferredNumber;
+  }
   
 }
 
@@ -97,6 +100,56 @@ In figure 1 we can see that transaction cost occurs in amount of gas , <br>
 The more code or operations there are in your function, the more gas it will cost.
 
 <br><br>
+
+To understand more about functions we rewrite the code again:
+```
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+contract akrkSimplestorage {
+  // basic data types: boolean, uint,int,address,bytes
+  //uint(unsigned integer only positive),int both pos and neg
+  //address is the address of the account
+  //string are secretly byte objects only for text
+  //bytes32 is a bytes objects whre 32 represent how many bytes we want them to be,max size is 32
+  //byte objects look like 0xsdsysydggt
+  //unint256 here 256 is bit (8,16,32 upto 256 we can use)
+  uint256 public preferredNumber;//this gets initialized to zero
+
+//pasing parameter of type uint256 and made the function public
+  function store(uint256 _preferredNumber) public{
+    preferredNumber = _preferredNumber;
+    preferredNumber = preferredNumber +1;
+
+
+  }
+  function retrieve() public view returns(uint256){
+    return preferredNumber;
+  }
+  
+}
+
+//0xd9145CCE52D386f254917e481eB44e9943F39138
+```
+after that following ouputs
+![l1](https://user-images.githubusercontent.com/89090776/226166493-3718f4db-74ce-492b-a7d0-faa184ae5fb9.jpg)
+Figure5: Information of deployment after clicking store button
+![l2](https://user-images.githubusercontent.com/89090776/226166679-ee653b41-43f5-40cb-9c00-d9e0292e913b.jpg)
+Figure6: Information of deployment after clicking preferredNum button
+![l3](https://user-images.githubusercontent.com/89090776/226166722-382daad5-dd18-4ed2-b59f-1a5eafd9d920.jpg)
+Figure7: Information of deployment after clicking retrieve button<br>
+
+View and pure function does not actually have to spend gas to run.View function means we are going to read state from this contract.<br>
+For example ```function retrieve() public view returns(uint256){ return preferredNumber;}``` is just reading what preferredNumber is. <br>
+View function disallows any modification of state. Pure function also disallows any modification of state but it disallows reading always produces the same output given the same inputs.<br>
+So gas will only be spent if we only modify the blockchain.<br>
+Here you can see at figure 6 in the console there is something like ```2415 gas (Cost only applies when called by a contract)``` <br>
+It means ```2451 gas``` will only be applied if this ```function retrieve() public view returns(uint256){}``` function is called by any gas calling function otherwise not<br>
+Gas calling function is the function which is upadating the state of blockchain which in the above code is ```function store(uint256 _preferredNumber) public{}```<br>
+```uint256 public preferredNumber;``` will also remain view function till it has public keyword.
+
+
+
 
 
 
