@@ -54,9 +54,10 @@ contract akrkSimplestorage {
   //bytes32 is a bytes objects whre 32 represent how many bytes we want them to be,max size is 32
   //byte objects look like 0xsdsysydggt
   //unint256 here 256 is bit (8,16,32 upto 256 we can use)
-  uint256 public preferredNumber;//this gets initialized to zero
-
+  uint256 public preferredNumber;//this gets initialized to zero,
+  //this 'uint256 public preferredNumber' is a global scope means anything inside the curly brackets of contract akrkSimplestorage can access it.       
 //pasing parameter of type uint256 and made the function public
+//anything created within this function below can't be access by other functions or anything inside the curly brackets of contract akrkSimplestorage  
   function store(uint256 _preferredNumber) public{
     preferredNumber = _preferredNumber;
     preferredNumber = preferredNumber +1;
