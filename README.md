@@ -64,9 +64,7 @@ contract akrkSimplestorage {
 
 
   }
-  function retrieve() public view returns(uint256){
-    return preferredNumber;
-  }
+  
   
 }
 
