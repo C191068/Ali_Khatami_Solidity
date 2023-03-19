@@ -141,12 +141,17 @@ Figure7: Information of deployment after clicking retrieve button<br>
 
 View and pure function does not actually have to spend gas to run.View function means we are going to read state from this contract.<br>
 For example ```function retrieve() public view returns(uint256){ return preferredNumber;}``` is just reading what preferredNumber is. <br>
-View function disallows any modification of state. Pure function also disallows any modification of state but it disallows reading always produces the same output given the same inputs.<br>
+View function disallows any modification of state. Pure function also disallows any modification of state but it disallows reading and always produces the same output given the same inputs.<br>
 So gas will only be spent if we only modify the blockchain.<br>
 Here you can see at figure 6 in the console there is something like ```2415 gas (Cost only applies when called by a contract)``` <br>
 It means ```2451 gas``` will only be applied if this ```function retrieve() public view returns(uint256){}``` function is called by any gas calling function otherwise not<br>
-Gas calling function is the function which is upadating the state of blockchain which in the above code is ```function store(uint256 _preferredNumber) public{}```<br>
+Gas calling function is the function which is upadating the state of blockchain and we have to spend gas for it<br>
+In the above code  ```function store(uint256 _preferredNumber) public{}```is the gas calling function<br>
 ```uint256 public preferredNumber;``` will also remain view function till it has public keyword.
+Here in Figure:5 ```store``` button as it is created due to gas calling function ```function store(uint256 _preferredNumber) public{}``<br>
+And ```preferredNum``` button and ```retrieve``` button are blue colored as they created by view function.<br>
+
+<br><br>
 
 
 
