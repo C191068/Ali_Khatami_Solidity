@@ -91,7 +91,11 @@ When we typed a number ```632``` and hit the the store button we are actually ma
 For better understanding of solidity function vissibility we need to visit this website https://docs.soliditylang.org/en/v0.8.19/cheatsheet.html <br>
 Here ```public``` before ```uint256 public preferredNumber```   means anyone who interacts with this contract can see what is store in the prefereednumber.<br>
 By default every keyword here is default.<br>
-In figure 1 we can see that transaction cost occurs in amount of gas , the more complex we do in our code the more is the transaction cost.<br>
+In figure 1 we can see that transaction cost occurs in amount of gas , <br>
+```gas``` is a measure of computational resources required to execute a smart contract.<br>
+The more code or operations there are in your function, the more gas it will cost.
+
+<br><br>
 
 
 
