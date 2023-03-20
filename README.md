@@ -1,5 +1,7 @@
 ## Ali_Khatami_Solidity
 ### Basic with data types
+"EVM stands for Ethereum Virtual Machine. It is a virtual machine that runs on the Ethereum blockchain and is responsible for executing smart contracts written in Ethereum's Solidity programming language. The EVM is a key component of the Ethereum ecosystem, as it provides a secure and reliable environment for executing decentralized applications (dapps) on the blockchain.<br>"
+
 We are using ```https://remix.ethereum.org/``` for our solidity smart contracts<br> 
 We have created a file ```akrkSimpleStorage.sol``` where ```.sol``` means that it is a solidity file. Solidity is the priamary coding language of smart contract.<br>
 Solidity is constantly changing and updating language.<br>
