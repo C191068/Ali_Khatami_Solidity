@@ -6,7 +6,9 @@ We are using ```https://remix.ethereum.org/``` for our solidity smart contracts<
 We have created a file ```akrkSimpleStorage.sol``` where ```.sol``` means that it is a solidity file. Solidity is the priamary coding language of smart contract.<br>
 Solidity is constantly changing and updating language.<br>
 Today I have have done some basic part of solidity
-```
+
+```solidity
+
 //SPDX-License-Identifier: MIT
 //"SPDX" stands for "Software Package Data Exchange", which is a standard for sharing information about software licenses. 
 //It provides a common way for developers, lawyers, and other stakeholders to identify and understand the terms of a software license
@@ -44,7 +46,10 @@ When we run our fake local blockchain environment we are given a whole bunch of 
 Smart contracts have addresses like our wallet accounts<br>
 
 Example of basic function
-```
+
+
+```solidity
+
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
@@ -102,7 +107,9 @@ The more code or operations there are in your function, the more gas it will cos
 <br><br>
 
 To understand more about functions we rewrite the code again:
-```
+
+```solidity
+
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
